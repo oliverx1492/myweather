@@ -25,7 +25,7 @@ const Start = () => {
     //Funktion um Position zu bekommen
     const getCoordinates = async (city) => {
 
-        const link = `http://api.openweathermap.org/geo/1.0/direct?q=${city}}&limit=5&appid=${API_KEY}`
+        const link = `https://api.openweathermap.org/geo/1.0/direct?q=${city}}&limit=5&appid=${API_KEY}`
         const response = await fetch(link)
 
         if (response.ok) {

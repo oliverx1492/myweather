@@ -23,7 +23,7 @@ const Pollution = () => {
     const [poll, setPoll] = useState()
 
     const getPollution = async () => {
-        const link = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+        const link = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
         const response = await fetch(link)
 
         if (response.ok) {
