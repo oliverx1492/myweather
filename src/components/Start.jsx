@@ -4,11 +4,15 @@ import { useDispatch, useSelector } from "react-redux"
 import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { changeCity, changeLat, changeLon } from "../state/input/inputSlice"
+import dotenv from 'dotenv';
+
 
 
 const Start = () => {
 
-    const API_KEY = "e32b1705dd939d3c33598f03c06684f6"
+    const API_KEY = import.meta.env.API_KEY;
+    const name = import.meta.env.NAME
+    console.log("NAME: ", name)
 
     //Auswahl an Ergebnissen
     const [result, setResult] = useState([])

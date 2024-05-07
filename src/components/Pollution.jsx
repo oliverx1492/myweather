@@ -2,6 +2,9 @@ import { useDispatch, useSelector } from "react-redux"
 import Menu from "./Menu"
 import Start from "./Start"
 import { useEffect, useState } from "react"
+import dotenv from 'dotenv';
+
+
 
 
 const Pollution = () => {
@@ -10,7 +13,8 @@ const Pollution = () => {
     const city = useSelector((state) => state.input.city)
     const lat = useSelector((state) => state.input.lat)
     const lon = useSelector((state) => state.input.lon)
-    const API_KEY = "e32b1705dd939d3c33598f03c06684f6"
+    
+    const API_KEY = import.meta.env.API_KEY;
 
     const aqi = {
         "1": "Gute Luftqualität",
