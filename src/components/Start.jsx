@@ -10,9 +10,8 @@ import dotenv from 'dotenv';
 
 const Start = () => {
 
-    const API_KEY = import.meta.env.API_KEY;
-    const name = import.meta.env.NAME
-    console.log("NAME: ", name)
+    const API_KEY = import.meta.env.VITE_API_KEY
+    
 
     //Auswahl an Ergebnissen
     const [result, setResult] = useState([])

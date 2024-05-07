@@ -9,7 +9,7 @@ import dotenv from 'dotenv';
 
 const Forecast5 = () => {
 
-    const API_KEY = import.meta.env.API_KEY;
+    const API_KEY = import.meta.env.VITE_API_KEY
 
     const city = useSelector((state) => state.input.city)
     const lat = useSelector((state) => state.input.lat)

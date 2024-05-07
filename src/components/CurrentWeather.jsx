@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 
 const CurrentWeather = () => {
 
-    const API_KEY = import.meta.env.API_KEY;
+    const API_KEY = import.meta.env.VITE_API_KEY
 
 
     const city = useSelector((state) => state.input.city)

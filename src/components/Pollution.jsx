@@ -13,8 +13,8 @@ const Pollution = () => {
     const city = useSelector((state) => state.input.city)
     const lat = useSelector((state) => state.input.lat)
     const lon = useSelector((state) => state.input.lon)
-    
-    const API_KEY = import.meta.env.API_KEY;
+
+    const API_KEY = import.meta.env.VITE_API_KEY
 
     const aqi = {
         "1": "Gute Luftqualität",
