@@ -1,8 +1,21 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
+This Weather App is a modern and intuitive tool to check current weather conditions and forecasts. Using the OpenWeather API, it provides detailed information about the weather, including temperature, humidity, wind speed, air pressure, sunrise and sunset times, and a 5-day forecast. Additionally, it displays air quality data to help users stay informed about pollution levels in their area.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- **Current Weather Conditions**:
+  - Live updates for temperature, humidity, wind speed, and air pressure.
+  - Sunrise and sunset times based on the user's location.
+- **5-Day Weather Forecast**:
+  - Hourly and daily weather predictions for the next 5 days.
+- **Air Quality Index**:
+  - Real-time air pollution data
+
+
+Link: https://wetter-5904.onrender.com/
+
+## Used Technologies:
+JavaScript, React
